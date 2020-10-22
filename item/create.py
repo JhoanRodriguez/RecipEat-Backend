@@ -18,7 +18,7 @@ collection = db[mongo_collection_name]
 
 def create(event, context):
     # get request body
-    data = json.loads(event['body'])
+    data = event['body']
 
     # create item to insert
     item = {

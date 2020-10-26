@@ -51,3 +51,11 @@ functions:
           path: item/{id}
           method: delete
           cors: true
+  
+  filter:
+    handler: item/filter.filter
+    events:
+      - http:
+          path: item/search
+          method: get
+          cors: true
